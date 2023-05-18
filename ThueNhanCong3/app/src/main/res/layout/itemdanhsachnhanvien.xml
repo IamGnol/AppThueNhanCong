@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/cardViewdonhang"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:background="@drawable/vongtron"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imgdonhang1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/nhanvien"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+
+            android:layout_toRightOf="@+id/imgdonhang1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Tên"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/tenkh"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tenkh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên nhân viên"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txttenkh"/>
+        <TextView
+           android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txttenkh"
+            android:layout_toRightOf="@+id/imgdonhang1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/email"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txttenkh"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtemailkh"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

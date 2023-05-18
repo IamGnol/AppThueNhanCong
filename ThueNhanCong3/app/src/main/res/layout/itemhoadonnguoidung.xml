@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp">
+    <RelativeLayout
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/vongtron"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="108dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="15dp"
+            android:id="@+id/imgdonhang1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/donhang"/>
+
+        <TextView
+            android:fontFamily="@font/alike"
+            android:id="@+id/donhang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imgdonhang1"
+            android:paddingLeft="10dp"
+            android:text="Đơn hàng"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:fontFamily="@font/alike"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/donhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tendonhang"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txttendonhang"/>
+        <TextView
+            android:fontFamily="@font/alike"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/donhang"
+            android:layout_toRightOf="@+id/imgdonhang1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày Đặt"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/ngaydat"/>
+
+        <TextView
+            android:fontFamily="@font/alike"
+            android:id="@+id/txtngaydat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txttendonhang"
+            android:layout_toRightOf="@+id/donhang"
+            android:paddingLeft="10dp"
+            android:text="ngaydat"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <TextView
+            android:fontFamily="@font/alike"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/ngaydat"
+            android:layout_toRightOf="@+id/imgdonhang1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/tongtien"/>
+        <TextView
+            android:fontFamily="@font/alike"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/txtngaydat"
+            android:layout_toRightOf="@+id/donhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tong tien"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txttongtien"/>
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/txtngaydat"
+            android:layout_toRightOf="@+id/donhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tong tien"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtdiachi"/>
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/txtngaydat"
+            android:layout_toRightOf="@+id/donhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtemailnv"/>
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/txtngaydat"
+            android:layout_toRightOf="@+id/donhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tong tien"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtemailnd"/>
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/txtngaydat"
+            android:layout_toRightOf="@+id/donhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tong tien"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtghichu"/>
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/txtngaydat"
+            android:layout_toRightOf="@+id/donhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tong tien"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtnoidung"/>
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/txtngaydat"
+            android:layout_toRightOf="@+id/donhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tong tien"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtsdt"/>
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/txtngaydat"
+            android:layout_toRightOf="@+id/donhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tong tien"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtngaylap"/>
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/txtngaydat"
+            android:layout_toRightOf="@+id/donhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tong tien"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtdongia"/>
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/txtngaydat"
+            android:layout_toRightOf="@+id/donhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tong tien"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtsoluong"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

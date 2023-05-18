@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#F9FBF9"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/drawerlayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toobaltrangchu"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#273CAA">
+
+                <ImageView
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="end"
+                    android:id="@+id/imgqrcode"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                   android:background="@drawable/qr"/>
+                <ImageView
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="end"
+                    android:id="@+id/hoadon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bill"/>
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="15dp" />
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/circle_indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:visibility="gone"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Các dịch vụ"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+                <RelativeLayout
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:id="@+id/r1"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/vongtron"
+                        android:id="@+id/dienlanh"
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true">
+                        <ImageView
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/imglich"
+                            android:layout_width="80dp"
+                            android:background="@drawable/dienlanhmau"
+                            android:layout_height="60dp" />
+
+                        <TextView
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_below="@+id/imglich"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="Điện lạnh" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:background="@drawable/vongtron"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@+id/dienlanh"
+                        android:id="@+id/ongnuoc"
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true">
+
+                        <ImageView
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/imgdien"
+                            android:layout_width="80dp"
+                            android:background="@drawable/ongnuocmau"
+                            android:layout_height="60dp" />
+
+                        <TextView
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_below="@+id/imgdien"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="Ống nước" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+
+                        android:background="@drawable/vongtron"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_toRightOf="@+id/ongnuoc"
+                        android:id="@+id/suanha"
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true">
+
+                        <ImageView
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/imgsuanha"
+                            android:layout_width="80dp"
+                            android:background="@drawable/suanhamau"
+                            android:layout_height="60dp" />
+
+                        <TextView
+                            android:layout_below="@id/imgsuanha"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sửa nhà" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/r2"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/vongtron"
+                        android:id="@+id/suadien"
+                        android:layout_width="90dp"
+                        android:layout_height="110dp"
+                        android:layout_centerHorizontal="true">
+                        <ImageView
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/imgsuadien"
+                            android:layout_width="80dp"
+                            android:background="@drawable/dientuhu"
+                            android:layout_height="60dp" />
+
+                        <TextView
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_below="@+id/imgsuadien"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="Sửa điện" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:background="@drawable/vongtron"
+
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@+id/suadien"
+                        android:id="@+id/donuoc"
+                        android:layout_width="90dp"
+                        android:layout_height="110dp"
+                        android:layout_centerHorizontal="true">
+
+                        <ImageView
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/imgdonuoc"
+                            android:layout_width="80dp"
+                            android:background="@drawable/donuoc"
+                            android:layout_height="60dp" />
+
+                        <TextView
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_below="@+id/imgdonuoc"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dò nước" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:background="@drawable/vongtron"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_toRightOf="@+id/donuoc"
+                        android:id="@+id/dientu"
+                        android:layout_width="90dp"
+                        android:layout_height="110dp"
+                        android:layout_centerHorizontal="true">
+
+                        <ImageView
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/imgsuadientu"
+                            android:layout_width="80dp"
+                            android:background="@drawable/dientu"
+                            android:layout_height="60dp" />
+
+                        <TextView
+                            android:layout_below="@id/imgsuadientu"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Điện tử" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/phone"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:src="@android:drawable/stat_sys_phone_call"
+                app:backgroundTint="#3DAE0B"
+                android:clickable="true"
+                android:id="@+id/floatingbutton"/>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:id="@+id/navigationView"
+            app:headerLayout="@layout/navigationheader"
+            app:menu="@menu/navigationmenu"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+    
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+

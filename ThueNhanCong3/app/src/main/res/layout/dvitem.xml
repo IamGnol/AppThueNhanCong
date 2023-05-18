@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:background="@drawable/vongtrong1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:id="@+id/tendv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Tendv"
+            android:layout_toRightOf="@+id/img"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tendv"
+            android:textStyle="bold"
+            android:textColor="#3E7C08"
+            android:id="@+id/gia"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="19dp"
+            android:text="gia" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BangGiaDichVuSuaDien">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/id_trove"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_chevron_left" />
+        <TextView
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="BẢNG GIÁ"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:textStyle="bold"
+            android:textColor="#B10C0C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Bảng giá tham khảo, chưa bao gồm VAT, quý Khách Hàng vui lòng liên hệ hoặc đặt lịch để được kỹ thuật tư vấn cụ thể, báo giá miễn phí."
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/recyclerViewBangGia"
+        android:layout_width="match_parent"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+</LinearLayout>

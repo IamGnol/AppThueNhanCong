@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/cardViewdonhang"
+    android:layout_height="wrap_content"
+    android:background="@drawable/vongtron"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/vongtron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imgdonhang1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/donhang"/>
+
+
+        <TextView
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/vongtron"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/imgdonhang1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Đơn hàng"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/donhang"/>
+        <TextView
+            android:fontFamily="@font/alike"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/donhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên Đơn Hàng"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txttendonhang"/>
+        <TextView
+            android:fontFamily="sans-serif-medium"
+            android:background="@drawable/vongtron"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txttendonhang"
+            android:layout_toRightOf="@+id/imgdonhang1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Ngày đặt"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/ngaydat"/>
+
+        <TextView
+            android:fontFamily="@font/alike"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txttendonhang"
+            android:layout_toRightOf="@+id/ngaydat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày đặt"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtngaydat"/>
+        <TextView
+            android:visibility="gone"
+            android:background="@drawable/vongtron"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txtngaydat"
+            android:layout_toRightOf="@+id/imgdonhang1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Điện thoại"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/sdtKH"/>
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txtngaydat"
+            android:layout_toRightOf="@+id/sdtKH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtsdtdat"/>
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/imgdonhang1"
+            android:layout_below="@+id/txtsdtdat"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Nội dung:"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/noidung"/>
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/txtsdtdat"
+            android:layout_toRightOf="@+id/noidung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nội dung"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtnoidung"/>
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/xacnhan"
+            android:layout_toRightOf="@+id/imgdonhang1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtdiachi"/>
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/txtdiachi"
+            android:layout_toRightOf="@+id/imgdonhang1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email nv"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/txtemailnv"/>
+
+
+        <TextView
+            android:id="@+id/trangthai"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtngaydat"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgdonhang1"
+            android:background="@drawable/vongtron"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="10dp"
+            android:text="Trạng thái"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:fontFamily="@font/alike"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txtnoidung"
+            android:layout_toRightOf="@+id/trangthai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trang thai"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:id="@+id/txthoanthanh"/>
+
+        <TextView
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="5dp"
+            android:id="@+id/xacnhan"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trangthai"
+            android:layout_toRightOf="@+id/imgdonhang1"
+            android:background="@drawable/vongtron"
+            android:paddingLeft="10dp"
+            android:text="Xác nhận"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtxacnhan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txthoanthanh"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/xacnhan"
+            android:fontFamily="@font/alike"
+            android:paddingLeft="10dp"
+            android:text="Xac nhan"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:id="@+id/phanhoi"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trangthai"
+            android:layout_toRightOf="@+id/imgdonhang1"
+            android:background="@drawable/vongtron"
+            android:paddingLeft="10dp"
+            android:text="Phản Hồi Khách hàng"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/txthoanthanh"
+            android:layout_toRightOf="@+id/xacnhan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phan hoi"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:id="@+id/txtphanhoi"/>
+        <TextView
+            android:visibility="gone"
+            android:background="@drawable/vongtron"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txtdiachi"
+            android:layout_toRightOf="@+id/imgdonhang1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Email KH"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:id="@+id/EmailKH"/>
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txtxacnhan"
+            android:layout_toRightOf="@+id/xacnhan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:id="@+id/txtemail"/>
+
+        <Button
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/hoadon"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/vongtron"
+            android:layout_marginLeft="60dp"
+            android:layout_below="@+id/xacnhan"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Tạo Hoa don"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".QuetQR">
+    <ImageView
+        android:id="@+id/id_trove"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_chevron_left" />
+
+    <ImageView
+       android:layout_marginTop="30dp"
+        android:id="@+id/imghinh"
+        android:src="@drawable/ic_account"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/txtname"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imghinh"/>
+    <TextView
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/txtngaysinh"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtname" />
+    <TextView
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/txtdienthoai"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtngaysinh" />
+    <TextView
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/txtcongviec"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtdienthoai" />
+    <Button
+        android:layout_below="@+id/txtcongviec"
+        android:id="@+id/btnquetma"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="150dp"
+        android:text="Quét Mã QR Nhân Viên" />
+</RelativeLayout>

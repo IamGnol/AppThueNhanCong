@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="email_nhanvien">
+
+        <item>suadienlanh@gmail.com</item>
+        <item>sonsuanha@gmail.com</item>
+        <item>suaongnuoc@gmail.com</item>
+        <item>suadientu@gmail.com</item>
+        <item>donuoc@gmail.com</item>
+        <item>suadien@gmail.com</item>
+
+    </string-array>
+
+</resources>
